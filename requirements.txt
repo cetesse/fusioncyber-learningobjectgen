@@ -1,0 +1,6 @@
+# requirements.txt
+
+openai-whisper
+langchain
+tiktoken
+openai
