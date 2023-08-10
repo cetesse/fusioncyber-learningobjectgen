@@ -45,9 +45,9 @@ The app provides a simple command-line interface to perform two main tasks: vide
    - Open a terminal or command prompt.
    - Navigate to the app's directory.
 
-3. Execute the `main.py` script:
+3. Execute the `app.py` script:
    ```
-   python main.py
+   python app.py
    ```
 
 4. The app will display a menu with the following options:
