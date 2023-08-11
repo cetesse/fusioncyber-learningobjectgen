@@ -167,7 +167,7 @@ def main():
             selected_videos = [videofiles[num - 1] for num in video_numbers if 1 <= num <= len(videofiles)]
             for video_file in selected_videos:
                 transcript_file = transcribe_video(video_file)
-                generate_summary(transcript_file)
+                generate_summary(transcript_file, output_file)
 
         elif choice == '4':
             print("Exiting...")
