@@ -154,7 +154,13 @@ def main():
             for idx, video in enumerate(videofiles, 1):
                 print(f"{idx}. {video}")
 
+            # Selects videos to process
             video_choice = input("Enter the video number(s) to transcribe and generate summary (comma-separated, 0 to go back): ")
+
+            # Ask the user to input the output file name
+            output_file_name = input("Enter the desired output file name (without extension): ")
+            output_file = f"./learningobjects/{output_file_name}.txt"
+
             if video_choice == '0':
                 continue
             video_numbers = [int(num) for num in video_choice.split(",") if num.isdigit()]
